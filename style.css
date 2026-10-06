@@ -1,0 +1,153 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    min-height: 100vh;
+    padding: 40px 20px;
+
+    /* Background color */
+    background: linear-gradient(135deg, #667eea, #764ba2);
+
+    color: #333;
+}
+
+/* Main heading */
+header {
+    margin-bottom: 35px;
+}
+
+h1 {
+    font-size: 42px;
+    color: white;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+hr {
+    width: 70%;
+    margin: 15px auto;
+    border: none;
+    border-top: 3px solid white;
+}
+
+/* Game area */
+.result {
+    background-color: white;
+    color: #764ba2;
+
+    width: 400px;
+    max-width: 90%;
+
+    margin: 25px auto;
+    padding: 18px;
+
+    border-radius: 12px;
+
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Instructions */
+p {
+    font-size: 18px;
+    color: white;
+    margin: 18px 0;
+}
+
+/* Number input */
+.number {
+    width: 160px;
+    padding: 13px;
+
+    font-size: 20px;
+    text-align: center;
+
+    border: 3px solid #764ba2;
+    border-radius: 8px;
+
+    outline: none;
+    background-color: white;
+}
+
+.number:focus {
+    border-color: #ffcc00;
+    box-shadow: 0 0 8px rgba(255, 204, 0, 0.7);
+}
+
+/* Buttons */
+button {
+    padding: 13px 28px;
+
+    font-size: 17px;
+    font-weight: bold;
+
+    border: none;
+    border-radius: 8px;
+
+    cursor: pointer;
+
+    background-color: #ffcc00;
+    color: #333;
+
+    margin: 10px;
+
+    transition: 0.3s;
+}
+
+/* Button hover effect */
+button:hover {
+    background-color: #ff9900;
+    color: white;
+
+    transform: scale(1.05);
+}
+
+/* Score */
+.score {
+    font-size: 24px;
+    font-weight: bold;
+    color: #ffcc00;
+}
+
+/* Footer */
+footer {
+    margin-top: 25px;
+}
+
+/* Play Again button */
+.again {
+    background-color: #00c853;
+    color: white;
+}
+
+.again:hover {
+    background-color: #009624;
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+
+    body {
+        padding: 25px 10px;
+    }
+
+    h1 {
+        font-size: 32px;
+    }
+
+    .result {
+        width: 90%;
+    }
+
+    .number {
+        width: 130px;
+    }
+
+    button {
+        padding: 11px 20px;
+        font-size: 15px;
+    }
+}
